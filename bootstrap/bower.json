@@ -1,0 +1,21 @@
+{
+  "name": "Awesome",
+  "authors": [
+    "Tony Dao <huuduc.uneti@gmail.com>"
+  ],
+  "description": "I don't know",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5"
+  }
+}

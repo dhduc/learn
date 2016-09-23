@@ -1,0 +1,18 @@
+{
+  "name": "phantom",
+  "version": "1.0.0",
+  "description": "phantom test",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-phantomcss": "^0.3.2",
+    "phantomjs": "^1.9.7-14"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "grunt"
+  },
+  "author": "ducdh",
+  "license": "ISC"
+}

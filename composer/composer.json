@@ -1,0 +1,12 @@
+{
+    "name": "ducdh/test",
+    "require": {
+        "twig/twig": "^1.22"
+    },
+    "authors": [
+        {
+            "name": "foo",
+            "email": "foo@bar.com"
+        }
+    ]
+}

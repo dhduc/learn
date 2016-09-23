@@ -1,0 +1,192 @@
+.main {
+    background: #5391d3;
+    color: white;
+    font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
+    width: 60%;
+    padding-top: 15px;
+}
+
+.main .columns .row .columns p {
+}
+
+.title {
+    font-size: 1.3em;
+    padding-bottom: 20px;
+}
+
+.left-side {
+
+}
+
+.row .row {
+}
+
+.box {
+}
+
+/* Info */
+.info .box .title {
+    float: right;
+    clear: both;
+}
+
+.info .box .social .inline-list {
+    float: right;
+    clear: both;
+}
+
+.info .box .social .inline-list > li {
+    margin-left: 50px;
+}
+
+/* Contact row */
+.contact {
+    padding-top: 20px;
+}
+
+.contact p {
+    float: right;
+    clear: both;
+}
+
+/* Time row*/
+.time {
+    padding-top: 20px;
+}
+
+.time .date p {
+    padding-left: 100px;
+    float: left;
+    clear: both;
+}
+.time .hour p {
+    float: right;
+    clear: both;
+}
+
+/* Font awesome*/
+.fa:before {
+    color: white;
+}
+
+/* General */
+.main p {
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+/*
+ * Responsive
+ */
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+    .info .box .social .inline-list > li {
+        margin-left: 30px;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    .main {
+        width: 100%;
+    }
+
+    .info .box .social .inline-list > li {
+        margin-left: 30px;
+    }
+
+    .time .date p {
+        padding-left: 70px;
+    }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+    .main {
+        width: 100%;
+    }
+    .left-side, .right-side {
+        text-align: center;
+    }
+
+    .right-side {
+        padding-top: 20px;
+    }
+    .info .box .social .inline-list {
+        width: 45%;
+        margin: 0 auto;
+        float: none;
+    }
+    .info .box .social .inline-list > li {
+        margin-left: 20px;
+    }
+    /* Info */
+    .info .box .title {
+        float: none;
+    }
+    .info .box .social .inline-list {
+        float: none;
+    }
+    /* Contact row */
+    .contact p {
+        float: none;
+    }
+    /* Time row*/
+    /* Time row*/
+    .time {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .time .date p {
+        padding-left: 70px;
+        float: left;
+    }
+    .time .hour p {
+        padding-right: 70px;
+        float: right;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .main {
+        width: 100%;
+    }
+    .left-side, .right-side {
+        text-align: center;
+    }
+    .right-side {
+        padding-top: 20px;
+    }
+    .social {
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .info .box .social .inline-list {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .info .box .social .inline-list > li {
+        margin-left: 20px;
+    }
+    /* Info */
+    .info .box .title {
+        float: none;
+    }
+    .info .box .social .inline-list {
+        float: none;
+    }
+    /* Contact row */
+    .contact p {
+        float: none;
+    }
+    /* Time row*/
+    .time {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .time .date p {
+        padding-left: 0px;
+        float: left;
+    }
+    .time .hour p {
+        float: right;
+    }
+}

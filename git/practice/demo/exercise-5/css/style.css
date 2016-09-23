@@ -1,0 +1,15 @@
+/* Form */
+.form {
+    margin-top: 50px;
+}
+
+/* Main */
+.main {
+    margin-top: 20px;
+}
+.main .box {
+    height: 50px;
+    border: 1px solid orangered;
+    cursor: pointer;
+    margin: 10px;
+}

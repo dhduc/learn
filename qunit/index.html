@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>QUnit Test Example</title>
+ 
+    <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-1.23.1.css">
+  <script src="https://code.jquery.com/qunit/qunit-1.23.1.js"></script>
+</head>
+<body>
+    <div id="qunit"></div>
+    <div id="qunit-fixture"></div>
+    <script>
+    (function(){
+    // test unit
+    function add(x, y){
+        return x + y;
+    }
+ 
+    test('add()', function() {
+        equal(add(1, 2), 3, "Passed");
+        equal(add(1, 2), 2, "Fail");
+        equal(add(1, 2), 3);
+        equal(add(1, 2), 2);
+ 
+    });
+ 
+})();
+
+    </script>
+</body>
+</html>

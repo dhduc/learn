@@ -1,0 +1,67 @@
+.main
+{
+    margin-top: 30px;
+}
+.left-side
+{
+    background: #5391d3;
+}
+.left-side .box {
+    color: white;
+    width: 80%;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /* transform: translate*/
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.left-side .box p#box-title
+{
+    font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+    font-size: 1.8em;
+}
+
+.left-side .box p#box-text{
+    font-size: 1em;
+}
+
+.left-side .box p#box-footer
+{
+    font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+    font-style: italic;
+    font-size: 1.7em;
+}
+
+.right-side
+{
+    padding: 0px;
+}
+
+/*
+ * Responsive
+ */
+@media all and (min-width: 1024px) and (max-width: 1280px) { }
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    .left-side .box
+    {
+        width: 95%;
+        font-size: 0.7em;
+    }
+}
+@media all and (min-width: 480px) and (max-width: 768px) { }
+
+@media all and (max-width: 480px) {
+    .left-side .box
+    {
+        width: 95%;
+        font-size: 0.7em;
+    }
+}
+
+/*# sourceMappingURL=style.css.map */

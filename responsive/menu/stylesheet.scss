@@ -1,0 +1,24 @@
+/* Menu */
+body {
+    background-color: #ece8e5;
+}
+nav {
+    height: 40px;
+    width: 100%;
+    background-color: #455868;
+    font-size: 11pt;
+    font-family: 'PY Sans', Arial, sans-serif;
+    font-weight: bold;
+    position: relative;
+    border-bottom: 2px solid #283744;
+}
+nav ul {
+    padding: 0;
+    margin: 0 auto;
+    width: 600px;
+    height: 40px;
+}
+nav li {
+    display: inline;
+    float: left;
+}

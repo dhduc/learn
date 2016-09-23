@@ -1,0 +1,41 @@
+.box {
+    width: 500px;
+    height: 500px;
+    border: 2px solid #0d3349;
+
+    /* center block */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /* transform: translate*/
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+.box img {
+    width: 100%;
+    height: 100%;
+}
+
+/*
+ * Responsive
+ */
+@media all and (min-width: 1024px) and (max-width: 1280px) { }
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+
+}
+@media all and (min-width: 480px) and (max-width: 768px) {
+    .box {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .box {
+        width: 200px;
+        height: 200px;
+    }
+}

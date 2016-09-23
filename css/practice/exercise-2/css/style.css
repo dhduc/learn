@@ -1,0 +1,277 @@
+.main {
+    background: #5391d3;
+    color: white;
+    font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
+    padding-top: 15px;
+}
+
+.title {
+    font-size: 1.3em;
+    padding-bottom: 20px;
+}
+
+/* Info */
+.info .title {
+    float: right;
+    clear: both;
+}
+
+.info .social .inline-list {
+    float: right;
+    clear: both;
+}
+
+.info .social .inline-list > li {
+    margin-left: 50px;
+}
+.info .social .inline-list > li:first-child {
+    margin-left: 0;
+}
+
+/* Contact row */
+.contact {
+    padding-top: 20px;
+}
+
+.contact p {
+    float: right;
+    clear: both;
+}
+
+/* Time row*/
+.row.time {
+    padding-top: 20px;
+}
+
+.time .date p {
+    float: left;
+    clear: both;
+}
+
+.time .hour p {
+    float: right;
+    clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Font awesome*/
+.fa:before {
+    color: white;
+}
+
+/* General */
+.main p {
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+/*
+ * Responsive
+ */
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    .main {
+        width: 100%;
+    }
+
+    .time .date p {
+        padding-left: 70px;
+    }
+}
+
+@media all and (min-width: 640px) and (max-width: 768px) {
+    .main {
+        width: 100%;
+    }
+
+    /* Contact row */
+    .contact p {
+        float: right;
+    }
+
+    /* Time row*/
+    .time {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+
+
+@media all and (min-width: 480px) and (max-width: 640px) {
+    .main {
+        width: 100%;
+    }
+
+    .left-side, .right-side {
+        text-align: center;
+    }
+
+    .right-side {
+        padding-top: 20px;
+    }
+
+    /* Info */
+    .info .title {
+        float: none;
+    }
+
+    .info .social .inline-list {
+        float: none;
+        display: table;
+        margin: 0 auto;
+    }
+
+    /* Contact row */
+    .contact p {
+        float: none;
+    }
+
+    /* Time row*/
+    .time {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .time .date p {
+        padding-left: 0;
+        float: left;
+    }
+
+    .time .hour p {
+        float: right;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .main {
+        width: 100%;
+    }
+
+    .left-side, .right-side {
+        text-align: center;
+    }
+
+    .right-side {
+        padding-top: 20px;
+    }
+
+
+    .info .box .social .inline-list > li {
+        margin-left: 20px;
+    }
+    .info .title {
+        float: none;
+    }
+
+    .info .social .inline-list {
+        float: none;
+        display: table;
+        margin: 0 auto;
+    }
+
+    /* Contact row */
+    .contact p {
+        float: none;
+    }
+
+    /* Time row*/
+    .time {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .time .date p {
+        padding-left: 0;
+        float: left;
+    }
+
+    .time .hour p {
+        float: right;
+    }
+}
+
+@media all and (max-width: 320px) {
+    .main {
+        width: 100%;
+    }
+
+    .left-side, .right-side {
+        text-align: center;
+    }
+
+    .right-side {
+        padding-top: 20px;
+    }
+
+    .social {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .info .box .social .inline-list {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .info .box .social .inline-list > li {
+        margin-left: 20px;
+    }
+
+    /* Info */
+    .info .title {
+        float: none;
+    }
+
+    .info .social .inline-list {
+        float: none;
+    }
+
+    /* Contact row */
+    .contact p {
+        float: none;
+    }
+
+    /* Time row*/
+    .time {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .time .date p {
+        padding-left: 0;
+        float: left;
+    }
+
+    .time .hour p {
+        float: right;
+    }
+}

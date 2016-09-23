@@ -1,0 +1,537 @@
+// Import
+@import 'style';
+// Variable
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+
+body {
+    font: 100% $font-stack;
+    color: $primary-color;
+}
+
+// Nesting
+nav {
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    li { display: inline-block; }
+
+    a {
+        display: block;
+        padding: 6px 12px;
+        text-decoration: none;
+    }
+}
+
+// Mixins
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+.box { @include border-radius(10px); }
+
+// Extends
+.message {
+    border: 1px solid #ccc;
+    padding: 10px;
+    color: #333;
+}
+.success {
+    @extend .message;
+    border-color: green;
+}
+.error {
+    @extend .message;
+    border-color: red;
+}
+.warning {
+    @extend .message;
+    border-color: yellow;
+}
+
+// Operators
+.container { width: 100%; }
+article[role="main"] {
+    float: left;
+    width: 600px / 960px * 100%;
+}
+aside[role="complimentary"] {
+    float: right;
+    width: 300px / 960px * 100%;
+}
+
+/* Documention */
+// Nested rules
+#main p {
+    color: #0f0;
+    width: 90%;
+
+    .redbox {
+        background: #ff0;
+        color: #000;
+    }
+}
+#main {
+    width: 90%;
+
+    p, div {
+        font-size: 2em;
+        a { font-weight: bold; }
+    }
+
+    pre { font-size: 3em; }
+}
+
+// Referencing
+a {
+    font-weight: bold;
+    text-decoration: none;
+    &:hover { text-decoration: underline; }
+    body.firefox & { font-weight: normal; }
+}
+#main {
+    color: black;
+    a {
+        font-weight: bold;
+        &:hover { color: red }
+    }
+}
+#main {
+    color: black;
+    &-sidebar { border: 1px solid; }
+}
+
+// Nested properties
+.box {
+    font: 20px/24px fantasy {
+        size: 30em;
+        weight: bold;
+    }
+}
+
+// Comment
+$version: "0.1.0";
+/* This version is #{$version} */
+
+// SassScript
+#main {
+    $width: 5em !global;
+    width: $width;
+}
+#sidebar {
+    width: $width;
+}
+
+// Strings
+@mixin firefox-message($selector) {
+    body.firefox #{$selector}:before {
+        content: "Hi, Firefox users!";
+    }
+}
+@include firefox-message(".header");
+
+// Division
+p {
+    font: 10px/8px;
+    $width: 1000px;
+    width: $width/2;
+    width: round(1.5)/2;
+    height: (500px/2);
+    margin-left: 5px + 8px/2px;
+    font: (italic bold 10px/8px);
+}
+p {
+    $font-size: 12px;
+    $line-height: 30px;
+    font: #{$font-size}/#{$line-height};
+}
+
+// Color operations
+p {
+    color: #010203 + #040506;
+    background: #010203 * 2;
+}
+$translucent-red: rgba(255, 0, 0, 0.5);
+$green: #00ff00;
+p {
+    color: opacify($translucent-red, 0.3);
+    background-color: rgba(255, 0, 0, 0.25);
+}
+div {
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled='false', startColorstr='#{ie-hex-str($green)}', endColorstr='#{ie-hex-str($translucent-red)}');
+}
+
+// String operation
+p {
+    cursor: e + -resize;
+}
+p:before {
+    content: "Foo " + Bar;
+    font-family: sans- + "serif";
+}
+p {
+    margin: 3px + 4px auto;
+}
+p:before {
+    content: "I cut #{5+10} pies";
+}
+
+// & 
+.foo.bar {
+    $selector: &;
+}
+@mixin does-parent-exist {
+    @if & {
+        &:hover {
+            color: red;
+        }
+    } @else {
+        a {
+            color: red;
+        }
+    }
+}
+
+// Nested
+// Media
+.sidebar {
+    width: 300px;
+    @media screen and (orientation: landscape) {
+        width: 500px;
+    }
+}
+
+@media screen {
+    .aside {
+        @media (orientation: landscape) {
+            width: 500px;
+        }
+    }
+}
+
+$media: screen;
+$feature: -webkit-min-device-pixel-ratio;
+$value: 1.5;
+@media #{$media} and ($feature: $value) {
+    .sidebar {
+        width: 500px;
+    }
+}
+
+// @extend
+.error {
+    border: 1px #f00;
+    background: #fdd;
+}
+.error.intrusion {
+    background-image: url("/image/hacked.png");
+}
+.seriousError {
+    @extend .error;
+    border-width: 3px;
+}
+.hoverlink {
+    @extend a:hover;
+}
+.box a.user:hover {
+    text-decoration: underline;
+}
+
+// Multi extends
+.error {
+    border: 1px #f00;
+    background-color: #fdd;
+}
+.attention {
+    font-size: 3em;
+    background-color: #ff0;
+}
+.seriousError {
+    @extend .error;
+    border-width: 3px;
+}
+.criticalError {
+    @extend .seriousError;
+    position: fixed;
+    top: 10%;
+    bottom: 10%;
+    left: 10%;
+    right: 10%;
+}
+
+// Sequences
+#fade-links .link {
+    @extend a;
+}
+a {
+    color: blue;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+// Merge
+#admin .tabbar p {
+    font-weight: bold;
+}
+#demo .overview .fakelink {
+    @extend p;
+}
+
+// extend-only
+#context a%extreme {
+    color: blue;
+    font-weight: bold;
+    font-size: 2em;
+}
+.notice {
+    @extend %extreme;
+    color: blue;
+}
+b.important {
+    @extend .notice;
+}
+
+// extend 
+@media print {
+    .err {
+        border: 1px #f00;
+        background-color: #fdd;
+    }
+    .seriousErr {
+        @extend .err;
+        border-width: 3px;
+    }
+}
+
+// @at-root
+.parent {
+    @at-root {
+        .child {
+            color: blue;
+        }
+    }
+    .same {
+        color: whitespace;
+    }
+}
+@media print {
+    .page {
+        width: 8in;
+        @at-root (without: media) {
+            color: red;
+        }
+    }
+}
+
+// Debug
+//@debug 10em + 12em;
+
+// Warn
+@mixin adjust-location($x, $y) {
+    @if unitless($x) {
+        @warn "Assuming #{$x} to be pixels";
+        $x: 1px * $x;
+    }
+    @if unitless($y) {
+        @warn "Assuming #{$y} to be in pixels";
+        $y: 1px * $y;
+    }
+    position: relative; left: $x; top: $y;
+}
+
+// Control and expression
+$type: monster;
+strong {
+    border-width: if(true, 1px , 2px);
+    @if 1 + 1 == 2 { border: 1px solid; }
+    @if $type == ocean {
+        color: blue;
+    } @else if $type == monster {
+        color: red;
+    }
+}
+@for $i from 1 through 3 {
+    .item-#{$i} { width: 2em * $i; }
+}
+@each $animal in puma, egret, sala {
+    .#{$animal}-icon {
+        background: url('/images/#{$animal}.png');
+    }
+}
+@each $animal, $color in (puma, black), (sala, red) {
+    .#{$animal}-icon {
+        background-color: $color;
+    }
+}
+@each $header, $size in (h1: 2em, h2: 1.5em, h3: 1.2em) {
+    #{$header} {
+        font-size: $size;
+    }
+}
+$i: 6;
+@while $i > 0 {
+    .item-#{$i} { width: 2em * $i; }
+    $i: $i - 2;
+}
+
+// mixin directives
+@mixin large-text {
+    font: {
+        family: Arial;
+        size: 20px;
+        weight: bold;
+    }
+    color: #f00;
+}
+@mixin clearfix {
+    display: inline-block;
+    &:after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+    * html & { height: 1px }
+}
+.page {
+    @include large-text;
+    padding: 10px;
+}
+
+@mixin silly {
+    small {
+        color: blue;
+        background-color: red;
+    }
+}
+
+@include silly;
+@mixin cls {
+    @include large-text;
+    @include clearfix;
+}
+strong {
+    @include cls;
+}
+
+// arguments
+@mixin sexy($color, $width: 1in) {
+    border: {
+        color: $color;
+        width: $width;
+        style: solid;
+    }
+}
+
+ul {
+    @include sexy(blue, 1in);
+}
+li {
+    @include sexy(red);
+}
+@mixin box($shadow...) {
+    -moz-box-shadow: $shadow;
+    -webkit-box-shadow: $shadow;
+    box-shadow: $shadow;
+}
+.shadow {
+    @include box(0px 4px 5px #666, 2px 6px 10px #999);
+}
+
+@mixin colors($text, $background, $border) {
+    color: $text;
+    background-color: $background;
+    border-color: $border;
+}
+$values: #f00, #0f0, #00f;
+.primary {
+    @include colors($values...);
+}
+$value-map: (text: #0f0, background: #00f, border: #ff0);
+.secondary {
+    @include colors($value-map...);
+}
+
+@mixin stylish($arg...) {
+    font-weight: bold;
+}
+.stylish {
+    @include stylish(#0f0, 100px);
+}
+
+// passing content
+@mixin apply {
+    * html {
+        @content;
+    }
+}
+@include apply {
+    #logo {
+        background-color: blue;
+    }
+}
+$color: white;
+@mixin now($color: blue) {
+    background: $color;
+    @content;
+    border-color: $color;
+}
+.colors {
+    @include now { color: $color; }
+}
+
+// Function 
+$grid-width: 40px;
+$gutter-width: 10px;
+@function grid($n) {
+    @return $n * $grid-width + ($n - 1) * $gutter-width;
+}
+#sidebar {
+    width: grid(5);
+}
+
+// Extends
+%button {
+    min-width: 100px;
+    padding: 1em;
+    border-radius: 1em;
+}
+%twitter {
+    color: #fff;
+    background: #55a;
+}
+%facebook {
+    color: #fff;
+    background: #3b7;
+}
+.btn {
+    &-twitter {
+        @extend %button;
+        @extend %twitter;
+    }
+    &-facebook {
+        @extend %button;
+        @extend %facebook;
+    }
+}
+
+@function set-text-color($color) {
+    @if (lightness($color) > 50) {
+        @return #000;
+    } @else {
+        @return #fff;
+    }
+}
+$background: #07c;
+.notification {
+    background: $background;
+    color: set-text-color($background);
+}

@@ -1,0 +1,24 @@
+#Git ignore
+!var
+var/*
+!media
+media/*
+app/etc/local.xml
+errors/local.xml
+.idea
+*olctw_debug*
+*Olctw_Debug*
+*Olctw*
+*olctw*
+downloader/*
+==============
+!var
+var/*
+!downloader
+downloader/*
+.idea
+.idea/*
+*olctw_debug*
+*Olctw_Debug*
+*Olctw*
+*olctw*

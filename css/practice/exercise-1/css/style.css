@@ -1,0 +1,58 @@
+.main {
+    margin-top: 30px;
+}
+.left-side {
+    background: #5391d3;
+}
+.left-side .box {
+    color: white;
+    width: 85%;
+    margin: 0 auto;
+}
+.left-side .box p#box-title {
+    font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+    font-size: 1.7rem;
+    padding-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+.left-side .box p#box-text {
+    font-size: 1em;
+    margin-bottom: 0.5rem;
+}
+.left-side .box p#box-footer {
+    font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+    font-style: italic;
+    font-size: 1.6rem;
+    margin-bottom: 0.7rem;
+    padding-bottom: 1rem;
+}
+.right-side {
+    padding: 0;
+}
+.right-side .box img {
+    width: 100%;
+    height: 100%;
+}
+
+/*
+ * Responsive
+ */
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    .left-side .box {
+        width: 95%;
+        font-size: 0.9em;
+    }
+}
+@media all and (min-width: 480px) and (max-width: 768px) {
+    .left-side .box {
+        width: 95%;
+    }
+}
+@media all and (max-width: 480px) {
+    .left-side .box {
+        width: 95%;
+        font-size: 0.9em;
+    }
+}
+
+/*# sourceMappingURL=style.css.map */

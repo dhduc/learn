@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites time="2.559">
+    <testsuite name="Google search retrieves 10 or more results" tests="5" failures="0" errors="0" time="2.559" timestamp="2015-11-04T08:41:18.022Z" package="a">
+        <testcase name="google homepage title" classname="a" time="1.798"></testcase>
+        <testcase name="main form is found" classname="a" time="0.001"></testcase>
+        <testcase name="google title is ok" classname="a" time="0.758"></testcase>
+        <testcase name="search term has been submitted" classname="a" time="0.001"></testcase>
+        <testcase name="google search for &quot;casperjs&quot; retrieves 10 or more results" classname="a" time="0.001"></testcase>
+        <system-out></system-out>
+    </testsuite>
+</testsuites>

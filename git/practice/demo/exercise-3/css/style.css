@@ -1,0 +1,10 @@
+.main {
+    margin-top: 20px;
+}
+.span {
+    margin-left: 10px;
+}
+.span .panel {
+    background: #d8d5d2;
+    border-radius: 10px;
+}

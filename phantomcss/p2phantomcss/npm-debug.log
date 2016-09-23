@@ -1,0 +1,340 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install' ]
+2 info using npm@2.11.3
+3 info using node@v0.12.7
+4 verbose node symlink /usr/bin/node
+5 verbose readDependencies loading dependencies from /home/ducdh/LEARN/phantomcss/p2phantomcss/package.json
+6 warn package.json phantomtest@1.0.0 No repository field.
+7 verbose install where, deps [ '/home/ducdh/LEARN/phantomcss/p2phantomcss',
+7 verbose install   [ 'grunt', 'grunt-cli', 'grunt-phantomcss', 'phantomjs' ] ]
+8 verbose install where, peers [ '/home/ducdh/LEARN/phantomcss/p2phantomcss', [] ]
+9 verbose installManyTop reading for lifecycle /home/ducdh/LEARN/phantomcss/p2phantomcss/package.json
+10 info preinstall phantomtest@1.0.0
+11 verbose readDependencies loading dependencies from /home/ducdh/LEARN/phantomcss/p2phantomcss/package.json
+12 silly cache add args [ 'grunt@^0.4.5', null ]
+13 verbose cache add spec grunt@^0.4.5
+14 silly cache add args [ 'grunt-cli@^0.1.13', null ]
+15 verbose cache add spec grunt-cli@^0.1.13
+16 silly cache add parsed spec { raw: 'grunt@^0.4.5',
+16 silly cache add   scope: null,
+16 silly cache add   name: 'grunt',
+16 silly cache add   rawSpec: '^0.4.5',
+16 silly cache add   spec: '>=0.4.5 <0.5.0',
+16 silly cache add   type: 'range' }
+17 silly addNamed grunt@>=0.4.5 <0.5.0
+18 verbose addNamed ">=0.4.5 <0.5.0" is a valid semver range for grunt
+19 silly addNameRange { name: 'grunt', range: '>=0.4.5 <0.5.0', hasData: false }
+20 silly mapToRegistry name grunt
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry uri https://registry.npmjs.org/grunt
+24 verbose addNameRange registry:https://registry.npmjs.org/grunt not in flight; fetching
+25 silly cache add parsed spec { raw: 'grunt-cli@^0.1.13',
+25 silly cache add   scope: null,
+25 silly cache add   name: 'grunt-cli',
+25 silly cache add   rawSpec: '^0.1.13',
+25 silly cache add   spec: '>=0.1.13 <0.2.0',
+25 silly cache add   type: 'range' }
+26 silly addNamed grunt-cli@>=0.1.13 <0.2.0
+27 verbose addNamed ">=0.1.13 <0.2.0" is a valid semver range for grunt-cli
+28 silly addNameRange { name: 'grunt-cli', range: '>=0.1.13 <0.2.0', hasData: false }
+29 silly mapToRegistry name grunt-cli
+30 silly mapToRegistry using default registry
+31 silly mapToRegistry registry https://registry.npmjs.org/
+32 silly mapToRegistry uri https://registry.npmjs.org/grunt-cli
+33 verbose addNameRange registry:https://registry.npmjs.org/grunt-cli not in flight; fetching
+34 silly cache add args [ 'grunt-phantomcss@git://github.com/micahgodbolt/grunt-phantomcss.git#alt-runner',
+34 silly cache add   null ]
+35 verbose cache add spec grunt-phantomcss@git://github.com/micahgodbolt/grunt-phantomcss.git#alt-runner
+36 silly cache add args [ 'phantomjs@^1.9.7-14', null ]
+37 verbose cache add spec phantomjs@^1.9.7-14
+38 silly cache add parsed spec { raw: 'phantomjs@^1.9.7-14',
+38 silly cache add   scope: null,
+38 silly cache add   name: 'phantomjs',
+38 silly cache add   rawSpec: '^1.9.7-14',
+38 silly cache add   spec: '>=1.9.7-14 <2.0.0',
+38 silly cache add   type: 'range' }
+39 silly addNamed phantomjs@>=1.9.7-14 <2.0.0
+40 verbose addNamed ">=1.9.7-14 <2.0.0" is a valid semver range for phantomjs
+41 silly addNameRange { name: 'phantomjs', range: '>=1.9.7-14 <2.0.0', hasData: false }
+42 silly mapToRegistry name phantomjs
+43 silly mapToRegistry using default registry
+44 silly mapToRegistry registry https://registry.npmjs.org/
+45 silly mapToRegistry uri https://registry.npmjs.org/phantomjs
+46 verbose addNameRange registry:https://registry.npmjs.org/phantomjs not in flight; fetching
+47 silly cache add parsed spec { raw: 'grunt-phantomcss@git://github.com/micahgodbolt/grunt-phantomcss.git#alt-runner',
+47 silly cache add   scope: null,
+47 silly cache add   name: 'grunt-phantomcss',
+47 silly cache add   rawSpec: 'git://github.com/micahgodbolt/grunt-phantomcss.git#alt-runner',
+47 silly cache add   spec: 'git://github.com/micahgodbolt/grunt-phantomcss.git#alt-runner',
+47 silly cache add   type: 'hosted',
+47 silly cache add   hosted:
+47 silly cache add    { type: 'github',
+47 silly cache add      ssh: 'git@github.com:micahgodbolt/grunt-phantomcss.git#alt-runner',
+47 silly cache add      sshUrl: 'git+ssh://git@github.com/micahgodbolt/grunt-phantomcss.git#alt-runner',
+47 silly cache add      httpsUrl: 'git+https://github.com/micahgodbolt/grunt-phantomcss.git#alt-runner',
+47 silly cache add      gitUrl: 'git://github.com/micahgodbolt/grunt-phantomcss.git#alt-runner',
+47 silly cache add      shortcut: 'github:micahgodbolt/grunt-phantomcss#alt-runner',
+47 silly cache add      directUrl: 'https://raw.githubusercontent.com/micahgodbolt/grunt-phantomcss/alt-runner/package.json' } }
+48 verbose addRemoteGit caching git://github.com/micahgodbolt/grunt-phantomcss.git#alt-runner
+49 verbose addRemoteGit git://github.com/micahgodbolt/grunt-phantomcss.git#alt-runner is a repository hosted by github
+50 silly tryClone cloning git://github.com/micahgodbolt/grunt-phantomcss.git#alt-runner via git://github.com/micahgodbolt/grunt-phantomcss.git#alt-runner
+51 verbose tryClone git-github-com-micahgodbolt-grunt-phantomcss-git-0ba5785b not in flight; caching
+52 verbose request uri https://registry.npmjs.org/grunt-cli
+53 verbose request no auth needed
+54 info attempt registry request try #1 at 12:11:55
+55 verbose request id c6e9600d3759f4e1
+56 verbose etag "8DF8UKMFFYV0UDQ3DK6BVEBYC"
+57 http request GET https://registry.npmjs.org/grunt-cli
+58 verbose request uri https://registry.npmjs.org/phantomjs
+59 verbose request no auth needed
+60 info attempt registry request try #1 at 12:11:55
+61 verbose etag "8POJW3KLL1EHFVYONWP53CSG9"
+62 http request GET https://registry.npmjs.org/phantomjs
+63 verbose request uri https://registry.npmjs.org/grunt
+64 verbose request no auth needed
+65 info attempt registry request try #1 at 12:11:56
+66 verbose etag "349OI3LKYSTSX7NCSYRSBQZEN"
+67 http request GET https://registry.npmjs.org/grunt
+68 info git [ 'config', '--get', 'remote.origin.url' ]
+69 silly validateExistingRemote git://github.com/micahgodbolt/grunt-phantomcss.git#alt-runner remote.origin.url: git://github.com/micahgodbolt/grunt-phantomcss.git
+70 verbose validateExistingRemote git://github.com/micahgodbolt/grunt-phantomcss.git#alt-runner is updating existing cached remote /home/ducdh/.npm/_git-remotes/git-github-com-micahgodbolt-grunt-phantomcss-git-0ba5785b
+71 info git [ 'fetch', '-a', 'origin' ]
+72 verbose updateRemote git fetch -a origin (git://github.com/micahgodbolt/grunt-phantomcss.git)
+73 verbose setPermissions git://github.com/micahgodbolt/grunt-phantomcss.git#alt-runner set permissions on /home/ducdh/.npm/_git-remotes/git-github-com-micahgodbolt-grunt-phantomcss-git-0ba5785b
+74 verbose resolveHead git://github.com/micahgodbolt/grunt-phantomcss.git#alt-runner original treeish: alt-runner
+75 info git [ 'rev-list', '-n1', 'alt-runner' ]
+76 error git rev-list -n1 alt-runner: fatal: ambiguous argument 'alt-runner': unknown revision or path not in the working tree.
+76 error git rev-list -n1 alt-runner: Use '--' to separate paths from revisions, like this:
+76 error git rev-list -n1 alt-runner: 'git <command> [<revision>...] -- [<file>...]'
+77 http 304 https://registry.npmjs.org/grunt
+78 silly get cb [ 304,
+78 silly get   { date: 'Fri, 20 Nov 2015 05:11:56 GMT',
+78 silly get     via: '1.1 varnish',
+78 silly get     'cache-control': 'max-age=60',
+78 silly get     etag: '"349OI3LKYSTSX7NCSYRSBQZEN"',
+78 silly get     age: '34',
+78 silly get     connection: 'keep-alive',
+78 silly get     'x-served-by': 'cache-sjc3127-SJC',
+78 silly get     'x-cache': 'HIT',
+78 silly get     'x-cache-hits': '1',
+78 silly get     'x-timer': 'S1447996316.849423,VS0,VE0',
+78 silly get     vary: 'Accept' } ]
+79 verbose etag https://registry.npmjs.org/grunt from cache
+80 verbose get saving grunt to /home/ducdh/.npm/registry.npmjs.org/grunt/.cache.json
+81 silly addNameRange number 2 { name: 'grunt', range: '>=0.4.5 <0.5.0', hasData: true }
+82 silly addNameRange versions [ 'grunt',
+82 silly addNameRange   [ '0.1.0',
+82 silly addNameRange     '0.1.1',
+82 silly addNameRange     '0.1.2',
+82 silly addNameRange     '0.2.0',
+82 silly addNameRange     '0.2.1',
+82 silly addNameRange     '0.2.2',
+82 silly addNameRange     '0.2.3',
+82 silly addNameRange     '0.2.4',
+82 silly addNameRange     '0.2.5',
+82 silly addNameRange     '0.2.6',
+82 silly addNameRange     '0.2.7',
+82 silly addNameRange     '0.2.8',
+82 silly addNameRange     '0.2.9',
+82 silly addNameRange     '0.2.10',
+82 silly addNameRange     '0.2.11',
+82 silly addNameRange     '0.2.12',
+82 silly addNameRange     '0.2.13',
+82 silly addNameRange     '0.2.14',
+82 silly addNameRange     '0.2.15',
+82 silly addNameRange     '0.3.0',
+82 silly addNameRange     '0.3.1',
+82 silly addNameRange     '0.3.2',
+82 silly addNameRange     '0.3.3',
+82 silly addNameRange     '0.3.4',
+82 silly addNameRange     '0.3.5',
+82 silly addNameRange     '0.3.6',
+82 silly addNameRange     '0.3.7',
+82 silly addNameRange     '0.3.8',
+82 silly addNameRange     '0.3.9',
+82 silly addNameRange     '0.3.10',
+82 silly addNameRange     '0.3.11',
+82 silly addNameRange     '0.3.12',
+82 silly addNameRange     '0.3.13',
+82 silly addNameRange     '0.3.14',
+82 silly addNameRange     '0.3.15',
+82 silly addNameRange     '0.3.16',
+82 silly addNameRange     '0.3.17',
+82 silly addNameRange     '0.4.0',
+82 silly addNameRange     '0.4.1',
+82 silly addNameRange     '0.4.2',
+82 silly addNameRange     '0.4.3',
+82 silly addNameRange     '0.4.4',
+82 silly addNameRange     '0.4.5',
+82 silly addNameRange     '0.3.13-a',
+82 silly addNameRange     '0.4.0-a',
+82 silly addNameRange     '0.4.0-rc1',
+82 silly addNameRange     '0.4.0-rc2',
+82 silly addNameRange     '0.4.0-rc3',
+82 silly addNameRange     '0.4.0-rc4',
+82 silly addNameRange     '0.4.0-rc5',
+82 silly addNameRange     '0.4.0-rc6',
+82 silly addNameRange     '0.4.0-rc7',
+82 silly addNameRange     '0.4.0-rc8' ] ]
+83 silly addNamed grunt@0.4.5
+84 verbose addNamed "0.4.5" is a plain semver version for grunt
+85 silly cache afterAdd grunt@0.4.5
+86 verbose afterAdd /home/ducdh/.npm/grunt/0.4.5/package/package.json not in flight; writing
+87 verbose afterAdd /home/ducdh/.npm/grunt/0.4.5/package/package.json written
+88 http 304 https://registry.npmjs.org/grunt-cli
+89 silly get cb [ 304,
+89 silly get   { date: 'Fri, 20 Nov 2015 05:11:56 GMT',
+89 silly get     via: '1.1 varnish',
+89 silly get     'cache-control': 'max-age=60',
+89 silly get     etag: '"8DF8UKMFFYV0UDQ3DK6BVEBYC"',
+89 silly get     age: '49',
+89 silly get     connection: 'keep-alive',
+89 silly get     'x-served-by': 'cache-sjc3134-SJC',
+89 silly get     'x-cache': 'HIT',
+89 silly get     'x-cache-hits': '2',
+89 silly get     'x-timer': 'S1447996316.885954,VS0,VE0',
+89 silly get     vary: 'Accept' } ]
+90 verbose etag https://registry.npmjs.org/grunt-cli from cache
+91 verbose get saving grunt-cli to /home/ducdh/.npm/registry.npmjs.org/grunt-cli/.cache.json
+92 silly addNameRange number 2 { name: 'grunt-cli', range: '>=0.1.13 <0.2.0', hasData: true }
+93 silly addNameRange versions [ 'grunt-cli',
+93 silly addNameRange   [ '0.1.0',
+93 silly addNameRange     '0.1.1',
+93 silly addNameRange     '0.1.2',
+93 silly addNameRange     '0.1.3',
+93 silly addNameRange     '0.1.4',
+93 silly addNameRange     '0.1.5',
+93 silly addNameRange     '0.1.6',
+93 silly addNameRange     '0.1.7',
+93 silly addNameRange     '0.1.8',
+93 silly addNameRange     '0.1.9',
+93 silly addNameRange     '0.1.10',
+93 silly addNameRange     '0.1.11',
+93 silly addNameRange     '0.1.12',
+93 silly addNameRange     '0.1.13' ] ]
+94 silly addNamed grunt-cli@0.1.13
+95 verbose addNamed "0.1.13" is a plain semver version for grunt-cli
+96 silly cache afterAdd grunt-cli@0.1.13
+97 verbose afterAdd /home/ducdh/.npm/grunt-cli/0.1.13/package/package.json not in flight; writing
+98 verbose afterAdd /home/ducdh/.npm/grunt-cli/0.1.13/package/package.json written
+99 http 304 https://registry.npmjs.org/phantomjs
+100 silly get cb [ 304,
+100 silly get   { date: 'Fri, 20 Nov 2015 05:12:01 GMT',
+100 silly get     via: '1.1 varnish',
+100 silly get     'cache-control': 'max-age=60',
+100 silly get     etag: '"8POJW3KLL1EHFVYONWP53CSG9"',
+100 silly get     age: '9',
+100 silly get     connection: 'keep-alive',
+100 silly get     'x-served-by': 'cache-sjc3126-SJC',
+100 silly get     'x-cache': 'HIT',
+100 silly get     'x-cache-hits': '1',
+100 silly get     'x-timer': 'S1447996321.725745,VS0,VE6',
+100 silly get     vary: 'Accept' } ]
+101 verbose etag https://registry.npmjs.org/phantomjs from cache
+102 verbose get saving phantomjs to /home/ducdh/.npm/registry.npmjs.org/phantomjs/.cache.json
+103 silly addNameRange number 2 { name: 'phantomjs', range: '>=1.9.7-14 <2.0.0', hasData: true }
+104 silly addNameRange versions [ 'phantomjs',
+104 silly addNameRange   [ '0.0.1',
+104 silly addNameRange     '0.0.2',
+104 silly addNameRange     '0.0.3',
+104 silly addNameRange     '0.0.4',
+104 silly addNameRange     '0.0.5',
+104 silly addNameRange     '0.0.6',
+104 silly addNameRange     '0.0.7',
+104 silly addNameRange     '0.0.8',
+104 silly addNameRange     '0.0.9',
+104 silly addNameRange     '0.1.0',
+104 silly addNameRange     '0.1.1',
+104 silly addNameRange     '0.2.0',
+104 silly addNameRange     '0.2.1',
+104 silly addNameRange     '0.2.2',
+104 silly addNameRange     '0.2.3',
+104 silly addNameRange     '0.2.4',
+104 silly addNameRange     '0.2.5',
+104 silly addNameRange     '0.2.6',
+104 silly addNameRange     '1.8.0-1',
+104 silly addNameRange     '1.8.1-1',
+104 silly addNameRange     '1.8.1-2',
+104 silly addNameRange     '1.8.1-3',
+104 silly addNameRange     '1.8.2-0',
+104 silly addNameRange     '1.8.2-1',
+104 silly addNameRange     '1.8.2-2',
+104 silly addNameRange     '1.9.0-0',
+104 silly addNameRange     '1.9.0-1',
+104 silly addNameRange     '1.9.0-2',
+104 silly addNameRange     '1.9.0-3',
+104 silly addNameRange     '1.9.0-4',
+104 silly addNameRange     '1.9.0-5',
+104 silly addNameRange     '1.9.0-6',
+104 silly addNameRange     '1.9.1-0',
+104 silly addNameRange     '1.9.1-2',
+104 silly addNameRange     '1.9.1-3',
+104 silly addNameRange     '1.9.1-4',
+104 silly addNameRange     '1.9.1-5',
+104 silly addNameRange     '1.9.1-6',
+104 silly addNameRange     '1.9.1-7',
+104 silly addNameRange     '1.9.1-8',
+104 silly addNameRange     '1.9.1-9',
+104 silly addNameRange     '1.9.2-0',
+104 silly addNameRange     '1.9.2-1',
+104 silly addNameRange     '1.9.2-2',
+104 silly addNameRange     '1.9.2-3',
+104 silly addNameRange     '1.9.2-4',
+104 silly addNameRange     '1.9.2-5',
+104 silly addNameRange     '1.9.2-6',
+104 silly addNameRange     '1.9.6-0',
+104 silly addNameRange     '1.9.7-1',
+104 silly addNameRange     '1.9.7-3',
+104 silly addNameRange     '1.9.7-4',
+104 silly addNameRange     '1.9.7-5',
+104 silly addNameRange     '1.9.7-6',
+104 silly addNameRange     '1.9.7-7',
+104 silly addNameRange     '1.9.7-8',
+104 silly addNameRange     '1.9.7-9',
+104 silly addNameRange     '1.9.7-10',
+104 silly addNameRange     '1.9.7-11',
+104 silly addNameRange     '1.9.7-12',
+104 silly addNameRange     '1.9.7-13',
+104 silly addNameRange     '1.9.7-14',
+104 silly addNameRange     '1.9.7-15',
+104 silly addNameRange     '1.8.2-3',
+104 silly addNameRange     '1.9.8',
+104 silly addNameRange     '1.9.9',
+104 silly addNameRange     '1.9.10',
+104 silly addNameRange     '1.9.11',
+104 silly addNameRange     '1.9.12',
+104 silly addNameRange     '1.9.13',
+104 silly addNameRange     '1.9.15',
+104 silly addNameRange     '1.9.16',
+104 silly addNameRange     '1.9.17',
+104 silly addNameRange     '1.9.18' ] ]
+105 silly addNamed phantomjs@1.9.18
+106 verbose addNamed "1.9.18" is a plain semver version for phantomjs
+107 silly cache afterAdd phantomjs@1.9.18
+108 verbose afterAdd /home/ducdh/.npm/phantomjs/1.9.18/package/package.json not in flight; writing
+109 verbose afterAdd /home/ducdh/.npm/phantomjs/1.9.18/package/package.json written
+110 verbose stack Error: Command failed: git rev-list -n1 alt-runner
+110 verbose stack fatal: ambiguous argument 'alt-runner': unknown revision or path not in the working tree.
+110 verbose stack Use '--' to separate paths from revisions, like this:
+110 verbose stack 'git <command> [<revision>...] -- [<file>...]'
+110 verbose stack
+110 verbose stack     at ChildProcess.exithandler (child_process.js:751:12)
+110 verbose stack     at ChildProcess.emit (events.js:110:17)
+110 verbose stack     at maybeClose (child_process.js:1015:16)
+110 verbose stack     at Socket.<anonymous> (child_process.js:1183:11)
+110 verbose stack     at Socket.emit (events.js:107:17)
+110 verbose stack     at Pipe.close (net.js:485:12)
+111 verbose cwd /home/ducdh/LEARN/phantomcss/p2phantomcss
+112 error Linux 3.19.0-32-generic
+113 error argv "/usr/bin/node" "/usr/bin/npm" "install"
+114 error node v0.12.7
+115 error npm  v2.11.3
+116 error code 128
+117 error Command failed: git rev-list -n1 alt-runner
+117 error fatal: ambiguous argument 'alt-runner': unknown revision or path not in the working tree.
+117 error Use '--' to separate paths from revisions, like this:
+117 error 'git <command> [<revision>...] -- [<file>...]'
+118 error If you need help, you may report this error at:
+118 error     <https://github.com/npm/npm/issues>
+119 verbose exit [ 1, true ]
